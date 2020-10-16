@@ -1,0 +1,2 @@
+C:\Users\kmgtp\Desktop\Ćwiczenia\ProstyKalkulator\Debug\ProstyKalkulator.exe
+C:\Users\kmgtp\Desktop\Ćwiczenia\ProstyKalkulator\Debug\ProstyKalkulator.pdb
