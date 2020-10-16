@@ -33,7 +33,7 @@ int main()
 			cout << "[i] - arcsin kata" << endl;
 			cout << "[o] - arccos kata" << endl;
 			cout << "[a] - arctg kata" << endl; 
-			cout << "[e] - funkcja wykladnicza" << endl;
+			cout << "[e] - funkcja eksponencjalna" << endl;
 			cout << "[l] - logarytm o podstawie 10" << endl;
 			cout << "[k] - logarytm o podstawie naturalnej" << endl << endl;
 			cout << "Wybierz swoje dzialanie: ";
@@ -43,7 +43,7 @@ int main()
 			&& wybor != '/' && wybor != 'p' && wybor != 's' && wybor != 'c' && wybor != 't' && wybor != 'i'
 			&& wybor != 'o' && wybor != 'a' && wybor != 'e' && wybor != 'l' && wybor != 'k' );
 
-
+                setprecision(10);
 		cout << "Liczba/kat 1: ";
 		cin >> a;
 		cout << endl;
@@ -175,7 +175,7 @@ int main()
 		}
 		default:
 		{
-			cout << "Brak opcji!\n";
+			cout << "Blad" << endl;
 			stop();
 			break;
 		}
