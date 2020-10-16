@@ -43,7 +43,6 @@ int main()
 			&& wybor != '/' && wybor != 'p' && wybor != 's' && wybor != 'c' && wybor != 't' && wybor != 'i'
 			&& wybor != 'o' && wybor != 'a' && wybor != 'e' && wybor != 'l' && wybor != 'k' );
 
-                setprecision(10);
 		cout << "Liczba/kat 1: ";
 		cin >> a;
 		cout << endl;
@@ -70,7 +69,7 @@ int main()
 		}
 		case '*':
 		{
-			cout << "Iloczyn wynosi: " << a * b * c << endl;
+			cout << "Iloczyn wynosi: " << setprecision(20) << a * b * c << endl;
 			stop();
 			break;
 		}
@@ -84,14 +83,14 @@ int main()
 			}
 			else
 			{
-				cout << "Iloraz wynosi: " << a / b / c << endl;
+				cout << "Iloraz wynosi: " << setprecision(20) << a / b / c << endl;
 				stop();
 				break;
 			}
 		}
 		case'p':
 		{
-			cout << "Pierwiastek liczby 1. wynosi: " << sqrt(a) << endl << endl;
+			cout << "Pierwiastek liczby 1. wynosi: " << setprecision(20) << sqrt(a) << endl << endl;
 			cout << "Pierwiastek liczby 2. wynosi: " << sqrt(b) << endl << endl;
 			cout << "Pierwiastek liczby 3. wynosi: " << sqrt(c) << endl << endl;
 			stop();
@@ -99,7 +98,7 @@ int main()
 		}
 		case 's':
 		{
-			cout << "Sinus kata 1. wynosi: " << sin(a) << endl << endl;
+			cout << "Sinus kata 1. wynosi: " << setprecision(20) << sin(a) << endl << endl;
 			cout << "Sinus kata 2. wynosi: " << sin(b) << endl << endl;
 			cout << "Sinus kata 3. wynosi: " << sin(c) << endl << endl;
 			stop();
@@ -107,7 +106,7 @@ int main()
 		}
 		case 'c':
 		{
-			cout << "Cosinus kata 1. wynosi: " << cos(a) << endl << endl;
+			cout << "Cosinus kata 1. wynosi: " << setprecision(20) << cos(a) << endl << endl;
 			cout << "Cosinus kata 2. wynosi: " << cos(b) << endl << endl;
 			cout << "Cosinus kata 3. wynosi: " << cos(c) << endl << endl;
 			stop();
@@ -115,7 +114,7 @@ int main()
 		}
 		case 't':
 		{
-			cout << "Tangens kata 1. wynosi: " << tan(a) << endl << endl;
+			cout << "Tangens kata 1. wynosi: " << setprecision(20) << tan(a) << endl << endl;
 			cout << "Tangens kata 2. wynosi: " << tan(b) << endl << endl;
 			cout << "Tangens kata 3. wynosi: " << tan(c) << endl << endl;
 			stop();
@@ -123,7 +122,7 @@ int main()
 		}
 		case 'i':
 		{
-			cout << "Arcsin kata 1. wynosi: " << asin(a) << endl << endl;
+			cout << "Arcsin kata 1. wynosi: " << setprecision(20) << asin(a) << endl << endl;
 			cout << "Arcsin kata 2. wynosi: " << asin(b) << endl << endl;
 			cout << "Arcsin kata 3. wynosi: " << asin(c) << endl << endl;
 			stop();
@@ -131,7 +130,7 @@ int main()
 		}
 		case 'o':
 		{
-			cout << "Arccos kata 1. wynosi: " << acos(a) << endl << endl;
+			cout << "Arccos kata 1. wynosi: " << setprecision(20) << acos(a) << endl << endl;
 			cout << "Arccos kata 2. wynosi: " << acos(a) << endl << endl;
 			cout << "Arccos kata 3. wynosi: " << acos(a) << endl << endl;
 			stop();
@@ -139,7 +138,7 @@ int main()
 		}
 		case 'a':
 		{
-			cout << "Arctg kata 1. wynosi: " << atan(a) << endl << endl;
+			cout << "Arctg kata 1. wynosi: " << setprecision(20) << atan(a) << endl << endl;
 			cout << "Arctg kata 2. wynosi: " << atan(b) << endl << endl;
 			cout << "Arctg kata 3. wynosi: " << atan(c) << endl << endl;
 			stop();
@@ -147,7 +146,7 @@ int main()
 		}
 		case 'e':
 		{
-			cout << "Funkcja wykladnicza dla argumentu 1.: " << exp(a) << endl << endl;
+			cout << "Funkcja wykladnicza dla argumentu 1.: " << setprecision(20) << exp(a) << endl << endl;
 			cout << "Funkcja wykladnicza dla argumentu 2.: " << exp(b) << endl << endl;
 			cout << "Funkcja wykladnicza dla argumentu 3.: " << exp(c) << endl << endl;
 			stop();
@@ -155,7 +154,7 @@ int main()
 		}
 		case 'l':
 		{
-			cout << "Logarytm o podstawie 10 z liczby 1. wynosi: " << log10(a) << endl << endl;
+			cout << "Logarytm o podstawie 10 z liczby 1. wynosi: " << setprecision(20) << log10(a) << endl << endl;
 			cout << "Logarytm o podstawie 10 z liczby 2. wynosi: " << log10(b) << endl << endl;
 			cout << "Logarytm o podstawie 10 z liczby 3. wynosi: " << log10(c) << endl << endl;
 			stop();
@@ -163,7 +162,7 @@ int main()
 		}
 		case 'k':
 		{
-			cout << "Logarytm o podstawie naturalnej z liczby 1. wynosi: " << log(a) << endl << endl;
+			cout << "Logarytm o podstawie naturalnej z liczby 1. wynosi: " << setprecision(20) << log(a) << endl << endl;
 			cout << "Logarytm o podstawie naturalnej z liczby 2. wynosi: " << log(b) << endl << endl;
 			cout << "Logarytm o podstawie naturalnej z liczby 3. wynosi: " << log(c) << endl << endl;
 			stop();
