@@ -45,13 +45,38 @@ int main()
 
 		cout << "Liczba/kat 1: ";
 		cin >> a;
-		cout << endl;
+		cout << "\n";
+		while (cin.fail())
+		{
+			cin.clear();
+			cin.ignore(1000, '\n');
+			cout << "Wprowadzone dane musza byc liczba: ";
+			cin >> a;
+			cout << "\n";
+		}
 		cout << "Liczba/kat 2: ";
 		cin >> b;
-		cout << endl;
+		cout << "\n";
+		while (cin.fail())
+		{
+			cin.clear();
+			cin.ignore(1000, '\n');
+			cout << "Wprowadzone dane musza byc liczba: ";
+			cin >> b;
+			cout << "\n";
+		}
 		cout << "Liczba/kat 3: ";
 		cin >> c;
-		cout << endl;
+		cout << "\n";
+		while (cin.fail())
+		{
+			cin.clear();
+			cin.ignore(1000, '\n');
+			cout << "Wprowadzone dane musza byc liczba: ";
+			cin >> c;
+			cout << "\n";
+		}
+		cout << "\n";
 
 		switch (wybor)
 		{
