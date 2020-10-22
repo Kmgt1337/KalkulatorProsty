@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <math.h>
 #include <iomanip>
+#include <limits.h>
 
 using namespace std;
 
@@ -35,13 +36,18 @@ int main()
 			cout << "[a] - arctg kata" << endl; 
 			cout << "[e] - funkcja eksponencjalna" << endl;
 			cout << "[l] - logarytm o podstawie 10" << endl;
-			cout << "[k] - logarytm o podstawie naturalnej" << endl << endl;
+			cout << "[k] - logarytm o podstawie naturalnej" << endl;
+			cout << "[x] - wyjscie z progrmau" << endl << endl;
 			cout << "Wybierz swoje dzialanie: ";
 			cin >> wybor;
 			cout << endl;
+			if(wybor == 'x')
+			{
+                          exit(1);
+			}
 		} while (wybor != '+' && wybor != '-' && wybor != '*'
 			&& wybor != '/' && wybor != 'p' && wybor != 's' && wybor != 'c' && wybor != 't' && wybor != 'i'
-			&& wybor != 'o' && wybor != 'a' && wybor != 'e' && wybor != 'l' && wybor != 'k' );
+			&& wybor != 'o' && wybor != 'a' && wybor != 'e' && wybor != 'l' && wybor != 'k' && wybor!='x');
 
 		cout << "Liczba/kat 1: ";
 		cin >> a;
@@ -49,7 +55,7 @@ int main()
 		while (cin.fail())
 		{
 			cin.clear();
-			cin.ignore(1000, '\n');
+			cin.ignore(INT_MAX, '\n');
 			cout << "Wprowadzone dane musza byc liczba: ";
 			cin >> a;
 			cout << "\n";
@@ -60,7 +66,7 @@ int main()
 		while (cin.fail())
 		{
 			cin.clear();
-			cin.ignore(1000, '\n');
+			cin.ignore(INT_MAX, '\n');
 			cout << "Wprowadzone dane musza byc liczba: ";
 			cin >> b;
 			cout << "\n";
@@ -71,7 +77,7 @@ int main()
 		while (cin.fail())
 		{
 			cin.clear();
-			cin.ignore(1000, '\n');
+			cin.ignore(INT_MAX, '\n');
 			cout << "Wprowadzone dane musza byc liczba: ";
 			cin >> c;
 			cout << "\n";
@@ -192,10 +198,6 @@ int main()
 			cout << "Logarytm o podstawie naturalnej z liczby 3. wynosi: " << log(c) << endl << endl;
 			stop();
 			break;
-		}
-		case '0':
-		{
-			exit(1);
 		}
 		default:
 		{
